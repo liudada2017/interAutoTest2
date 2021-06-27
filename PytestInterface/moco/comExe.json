@@ -1,0 +1,53 @@
+[
+  {
+    "description": "department by dep_id",
+    "request": {
+      "uri": "/api/departments/",
+      "method": "get",
+      "queries": {
+        "$dep_id_list": "T001"
+      }
+    },
+    "response": {
+      "json": {
+        "count": 1,
+        "next": null,
+        "previous": null,
+        "results": [
+          {
+            "dep_id": "T001",
+            "dep_name": "php学院",
+            "master_name": "老李",
+            "slogan": "啦啦啦啦"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "description": "update department by dep_id",
+    "request": {
+      "uri": "/api/departments/T03/",
+      "method": "put",
+      "json": {
+        "data": [
+          {
+            "dep_id": "T03",
+            "dep_name": "C++",
+            "master_name": "C++-Master",
+            "slogan": "Here is Slogan"
+          }
+        ]
+      }
+    },
+    "response": {
+      "status": 201,
+      "json": {
+        "dep_id": "T03",
+        "dep_name": "C++",
+        "master_name": "C++-Master",
+        "slogan": "Here is Slogan"
+      }
+    }
+  }
+]

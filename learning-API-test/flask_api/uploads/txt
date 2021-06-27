@@ -1,0 +1,14 @@
+286732ares
+
+nqpjvuofhqydbfba
+
+
+登录接口：http://www.testingedu.com.cn:8000/index.php?m=Home&c=User&a=do_login&t=0.2700815916074655
+post
+username: 845809908@qq.com
+password: 123456
+verify_code: 1
+Content-Type: application/x-www-form-urlencoded
+
+购物车接口：http://www.testingedu.com.cn:8000/index.php?m=Home&c=Cart&a=header_cart_list
+get

@@ -1,0 +1,51 @@
+[
+  {
+    "description": "没有参数的get请求",
+    "request": {
+      "uri": "/api/get/demo",
+      "method": "get"
+    },
+    "response": {
+      "text": "hello no param get"
+    }
+  },
+  {
+    "description": "有参数的get请求",
+    "request": {
+      "uri":"/api/get/param/demo",
+      "method": "get",
+      "queries": {
+        "name": "xiaoming",
+        "age": "18"
+      }
+    },
+    "response": {
+      "text": "hello param get"
+    }
+  },
+  {
+    "description": "无参数带cookies",
+    "request": {
+      "uri": "/api/get/cookies/demo",
+      "method": "get",
+      "cookies": {
+        "login": "true"
+      }
+    },
+    "response": {
+      "text": "hello no param get cookies"
+    }
+  },
+  {
+    "description": "模拟无参数带重定向到百度",
+    "request": {
+      "uri": "/api/get/redirectTo/demo",
+      "method": "get"
+    },
+    "redirectTo": "http://www.baidu.com",
+        "response": {
+      "text": "hello redirectTo myself"
+    }
+  }
+
+]
